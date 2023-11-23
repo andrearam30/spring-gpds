@@ -18,7 +18,7 @@ FROM openjdk:17.0.2-jdk
 COPY --from=builder /app/target/spring-test/0.0.1-SNAPSHOT.jar /app.jar
 
 # Expone el puerto en el que se ejecuta tu aplicación
-EXPOSE 8080
+EXPOSE 3000
 
 # Comando para ejecutar la aplicación cuando se inicie el contenedor
 CMD ["java", "-jar", "/app.jar"]
